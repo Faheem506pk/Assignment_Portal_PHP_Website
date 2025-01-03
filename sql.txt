@@ -1,0 +1,34 @@
+db name = assignment_portal
+
+#Run first create sql Query 
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    student_id VARCHAR(50) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL
+);
+
+
+CREATE TABLE submissions (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    student_id INT NOT NULL,
+    assignment_name VARCHAR(255) NOT NULL,
+    assignment_image VARCHAR(255) NOT NULL,
+    submission_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+
+CREATE TABLE assignments (
+    id INT AUTO_INCREMENT PRIMARY KEY,       -- Unique identifier for each assignment
+    student_id INT NOT NULL,                    -- ID of the user submitting the assignment
+    name VARCHAR(255) NOT NULL,              -- Name of the assignment
+    subject VARCHAR(255) NOT NULL,           -- Subject of the assignment
+    file_link VARCHAR(500) NOT NULL,         -- Link to the assignment file
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP -- Timestamp of when the assignment was submitted
+);
+
+#Then run insert sql Query 
+
+INSERT INTO users (student_id, password) VALUES ('37201', 'admin1122');
+INSERT INTO users (student_id, password) VALUES ('67890', 'testpassword');
+INSERT INTO users (student_id, password) VALUES ('11111', 'mypassword');

@@ -1,0 +1,174 @@
+/* Reset basic styles */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  box-sizing: border-box;
+}
+
+/* Body background and centering */
+
+/* Background */
+body {
+  background: linear-gradient(135deg, #84fab0, #8fd3f4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100px;
+  background-color: #ffffff;
+  padding: 5px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.success-message {
+  color: green;
+  font-size: 12px;
+  font-weight: bold;
+  
+}
+
+/* Form container */
+form {
+  padding: 30px 30px 10px 30px;
+  border-radius: 15px;
+
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+}
+
+/* Form labels */
+form label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 8px;
+  text-align: left;
+  font-weight: bold;
+}
+
+/* Input fields */
+form input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+form input[type="text"]:focus {
+  border-color: #4facfe;
+  box-shadow: 0 0 5px rgba(79, 172, 254, 0.5);
+}
+
+/* Submit button */
+form button {
+  background-color: #4facfe;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+}
+
+form button:hover {
+  background-color: #3a9afc;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+  form {
+    padding: 20px;
+  }
+
+  form button {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+}
+
+/* Container styles */
+div {
+  text-align: center;
+
+ 
+  border-radius: 15px;
+
+  max-width: 500px;
+  width: 90%;
+}
+
+/* Header styles */
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Paragraph styles */
+p {
+  font-size: 11px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+/* Button styles */
+a {
+  display: inline-block;
+  text-decoration: none;
+
+  color: #ffffff;
+}
+
+a:hover {
+  background-color: #00a8ff;
+  color: #ffffff;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.go-back {
+  display: inline-block;
+
+
+margin-bottom: 20px;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  background-color: #4facfe;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  width: 80%;
+}
+
+.go-back:hover {
+  background-color: #3a9afc;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
